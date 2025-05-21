@@ -417,7 +417,7 @@ async def process_feedback(message: types.Message, state: FSMContext):
 
 async def main():
     # Добавляем администратора при первом запуске
-    db.add_admin(586842186)  # Замените на ваш ID
+    db.add_admin()  # Замените на ваш ID
     
     await dp.start_polling(bot)
 
